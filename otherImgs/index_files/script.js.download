@@ -1,0 +1,54 @@
+const wordEl = document.getElementById('word')
+const wrongLettersEl = document.getElementById('.wrong-letters')
+const popup = document.getElementById('pop-up-container')
+const finalMsg = document.getElementById('final-message')
+const playAgainBtn = document.getElementById('play-button')
+const notification = document.getElementById('notification-container')
+
+const figureParts = document.querySelectorAll('.figure-part')
+
+const words = ['javascript', 'application', 'jquery', 'documentation']
+
+let selectedWord = words[Math.floor(Math.random() * words.length)]
+
+const correctLetters = []
+const wrongLetters = []
+
+function displayWord() {
+    wordEl.innerHTML = `
+        ${selectedWord
+            .split('')
+            .map(letter => `
+                <span class = "letter">
+                    ${correctLetters.includes(letter) ? letter : ''}
+                </span>
+            `)
+            .join('')
+        }
+    `
+    const innerWorld = wordEl.innerText.replace(/\n/g, '') //da ih smjesti u jedan red
+    if(innerWorld === selectedWord){
+        finalMsg.innerText = 'Congratulations! You won!'
+        popup.style.display = 'flex'
+    }
+}
+function showNotification() {
+    notification.classList.add('show')
+}
+
+window.addEventListener('keydown', e => {
+    if(e.keyCode >= 65 && e.keyCode <= 95){
+        const letter = e.key
+        if(selectedWord.includes(letter).toLowerCase()){
+            if(!correctLetters.includes(letter)){
+                correctLetters.push(letter)
+                displayWord()
+            }
+            else{
+                showNotification()
+            }
+        }
+    }
+})
+
+displayWord()

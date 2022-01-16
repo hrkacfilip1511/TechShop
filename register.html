@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TechShop - Registracija</title>
+        <link rel="icon" href="./otherImgs/register-icon.png">
+        <link rel="stylesheet" href="register.css">
+        <script src="https://kit.fontawesome.com/aae6ccf1a0.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+               <li><a href="index.html">Početna</a></li>
+               <li><a href="about.html">O Nama</a></li>
+               <li><a href="contact.html">Kontakt</a></li>
+               <li><a href="#"><i class="fas fa-user-alt"></i></a></li>
+             </ul>
+        </nav>
+        <div class="heading">
+         <h1 class="company-name"><a href="index.html">TechShop</a></h1>
+        
+     </div>
+     <div class="login-container">
+        <div class="small-login-container">
+         <div class="login-header">
+             <h2>Login</h2>
+             <i class="fa fa-times"></i>
+         </div>
+         <form id="form" action = "index.html">
+             <div class="user-name">
+                 <label for="username">Korisničko ime</label>
+                 <input type="text" name="username" id="username">
+             </div>
+             <div class="password">
+                 <label for="password">Lozinka</label>
+                 <input type="password" name="password" id="passwd">
+             </div>
+             <div class="rememberme">
+                 <input type="checkbox" id="checkbox"><span>Zapamti moju prijavu</span>
+             </div>
+             <div class="sign-up">
+                 <p>Nemaš račun? <a href="#">Registriraj se</a></p>
+             </div>
+             <button class="submit-btn">Login</button>
+         </form>
+        </div>
+     </div>
+     <div class="register-container">
+         <div class="left-container">
+            <div class="left-container-content">
+                <h3>Get Started</h3>
+            <div class="google">
+                <a href="#"><button class="sign-google">Sign in with Google+</button>
+                </a>
+            </div>
+            <div class="facebook">
+                <a href="#"><button class="sign-fb">Sign in with Facebook</button></a>
+            </div>
+            </div>
+         </div>
+         <div class="register-form">
+            <form id="register-form" >
+                <div class="name-lastName">
+                    <div class="user-div">
+                        <input type="text" name="name" id="name" required>
+                        <label for="name">Ime</label>
+                    </div>
+                    <div class="lName-div">
+                        <input type="text" name="last-name" id="l-name" required>
+                        <label for="last-name">Prezime</label>
+                    </div>
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="email">
+                    <input type="email" name="email" id="email"required> 
+                    <label for="email">Email</label>
+                    <i class="fas fa-check-circle"></i>
+
+                </div>
+                <div class="for-pass">
+                    <div class="pass-div">
+                        <input type="password" name="pwd" id="pwd" required>
+                        <label for="pwd">Lozinka</label>
+                    </div>
+
+                    <div class="conf-pass-div">
+                        <input type="password" name="conf-pwd" id="conf-pwd" required>
+                        <label for="conf-pwd">Potvrdi Lozinku</label>
+                    </div>
+                    <i class="fas fa-check-circle"></i>
+
+                </div>
+                <div class="accepting">
+                    <input type="checkbox" id="cBox">
+                 <span>Prihvaćam <a href="#">uvjete korištenja</a> & <a href="#"> pravila privatnosti</a> </span>
+                </div>
+                <button class="register">Registriraj se</button>
+            </form>
+         </div>
+     </div>
+     <footer>
+        <div class="footer-first-row">
+            <div class="logo">
+                <img src="./otherImgs/logo.png" alt="logoImg">
+                <h2><a href="index.html">TechShop</a></h2>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="about.html">O Nama</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-last-row">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-google-plus"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; Copyright: Sva prava sadržana od TechShop, 2022.</p>
+    </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="register.js"></script>
+    </body>
+</html>
+
+
+
+

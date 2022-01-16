@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Dancing+Script:wght@600&family=Kanit:wght@200&family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Cormorant+Garamond:ital,wght@1,300&family=Dancing+Script:wght@600&family=Kanit:wght@200&family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Cormorant+Garamond:ital,wght@1,300&family=Dancing+Script:wght@600&family=Kanit:wght@200&family=Manrope&family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(152, 211, 205);
+}
+.company-name {
+  margin: 0;
+  padding: 20px;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+.company-name a {
+  text-decoration: none;
+  color: crimson;
+  letter-spacing: 1.4px;
+}
+nav {
+  background-color: rgb(83, 83, 83);
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  height: 80px;
+  display: flex;
+  transition: all 0.5s ease;
+  z-index: 20;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 0;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  letter-spacing: 1px;
+}
+nav ul li {
+  margin-right: 10%;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+  font-family: "Roboto";
+  letter-spacing: 1.2px;
+}
+nav ul li a:hover {
+  color: tomato;
+}
+nav.active {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(250, 246, 246);
+  transition: all 0.5s ease;
+}
+nav.active ul li a {
+  color: black;
+}
+nav.active ul li a:hover {
+  color: tomato;
+}
+
+.heading {
+  position: absolute;
+  top: 80px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+  opacity: 0.9;
+  padding: 0 20px;
+}
+.login-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation-name: modalOpen;
+  animation-duration: 1.1s;
+  z-index: 20;
+}
+
+.login-container.show-login {
+  display: block;
+}
+.small-login-container {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 400px;
+  background: grey;
+  opacity: 1;
+  border-radius: 5px;
+}
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.login-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: crimson;
+  align-items: center;
+  /*display: none;*/
+}
+.login-header h2 {
+  margin: 0;
+  color: white;
+  font-family: "Roboto";
+  letter-spacing: 1px;
+  padding: 5px;
+}
+.login-header .fa-times {
+  color: white;
+  font-size: 1.4rem;
+  padding: 5px;
+  cursor: pointer;
+}
+.user-name {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px;
+  padding: 10px;
+}
+.user-name label {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+.user-name #username {
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+.user-name #username:focus {
+  outline: none;
+}
+.password {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px;
+  padding: 10px;
+}
+.password label {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+.password #passwd {
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+.password #passwd:focus {
+  outline: none;
+}
+.rememberme {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 30px;
+  padding: 10px;
+  font-size: 1rem;
+  align-items: center;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.rememberme #checkbox {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.sign-up {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 30px;
+  padding: 10px;
+  font-size: 1rem;
+  align-items: center;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.submit-btn {
+  width: 200px;
+  padding: 8px 12px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 4px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  font-size: 1rem;
+}
+.submit-btn:hover {
+  background-color: rgb(248, 81, 115);
+}
+.register-container {
+  position: absolute;
+  width: 1000px;
+  height: 500px;
+  background-color: chocolate;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.left-container {
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 50%;
+  background-color: coral;
+  height: 100%;
+  background-image: url(./otherImgs/register.jpg);
+  background-size: cover;
+}
+.left-container-content {
+  position: absolute;
+  bottom: 15%;
+  right: 30%;
+  transform: translate(50%);
+}
+.left-container-content h3 {
+  color: white;
+  letter-spacing: 1.4px;
+  font-size: 1.2rem;
+  font-family: "Roboto";
+}
+.left-container-content .sign-google {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 10px 12px;
+  color: white;
+  border: 1px solid white;
+  margin: 10px 0;
+}
+.left-container-content .sign-fb {
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 10px 12px;
+  color: white;
+  border: 1px solid white;
+  margin: 10px 0;
+}
+.sign-google:hover,
+.sign-fb:hover {
+  opacity: 0.8;
+  background-color: white;
+  color: black;
+  transition: all 0.4s ease-in;
+}
+.register-form {
+  float: right;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 254, 254);
+  padding: 70px;
+  font-family: "Poppins";
+}
+.name-lastName {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.user-div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  position: relative;
+}
+.user-div label {
+  position: absolute;
+  left: 0;
+}
+.user-div input {
+  padding: 5px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid grey;
+}
+.user-div input:focus {
+  outline: none;
+}
+.lName-div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  position: relative;
+}
+.lName-div label {
+  position: absolute;
+  left: 0;
+}
+.lName-div input {
+  padding: 5px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid grey;
+}
+.lName-div input:focus {
+  outline: none;
+}
+.register-form .email {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 50px;
+  position: relative;
+}
+.register-form .email label {
+  position: absolute;
+  left: 0;
+}
+.register-form .email input {
+  padding: 5px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid grey;
+}
+.register-form .email input:focus {
+  outline: none;
+}
+.for-pass {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.pass-div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  position: relative;
+}
+.pass-div label {
+  position: absolute;
+  left: 0;
+}
+.pass-div input {
+  padding: 5px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid grey;
+}
+.pass-div input:focus {
+  outline: none;
+}
+.conf-pass-div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  position: relative;
+}
+.conf-pass-div input {
+  padding: 5px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid grey;
+}
+.conf-pass-div label {
+  position: absolute;
+  left: 0;
+}
+.conf-pass-div input:focus {
+  outline: none;
+}
+.accepting {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin: 40px 0;
+}
+.accepting #cBox {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.accepting a {
+  text-decoration: none;
+  color: rgb(63, 162, 201);
+}
+.register-form .register {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border: none;
+  background-color: skyblue;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.register-form .register:hover {
+  opacity: 0.8;
+}
+.register-form label span {
+  display: inline-block;
+  font-size: 15px;
+  min-width: 5px;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.register-form input:focus + label span,
+.register-form input:valid + label span {
+  color: rgb(33, 156, 156);
+  transform: translateY(-20px);
+}
+
+.register-form input {
+  display: block;
+}
+.user-div {
+  position: relative;
+  display: block;
+  font-size: 15px;
+}
+.user-div label {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.user-div label span {
+  display: inline-block;
+  font-size: 15px;
+  min-width: 5px;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.fa-check-circle {
+  position: absolute;
+  color: rgb(15, 247, 15);
+  right: 0;
+  bottom: 5px;
+  visibility: hidden;
+}
+.fa-check-circle.active {
+  visibility: inherit;
+}
+.correct {
+  border-bottom-color: rgb(15, 247, 15);
+}
+.wrong {
+  border-bottom: 3px solid red;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 1400px;
+  width: 100%;
+  height: 500px;
+  padding: 0 50px;
+}
+.footer-first-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .logo {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .logo h2 {
+  font-family: "Roboto";
+  letter-spacing: 1.2px;
+  color: white;
+  margin: 0;
+}
+footer .logo a {
+  text-decoration: none;
+  color: white;
+}
+footer img {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+.footer-menu li {
+  list-style: none;
+  margin: 30px 0;
+}
+.footer-menu li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  font-family: "Roboto";
+  letter-spacing: 0.7px;
+}
+.footer-menu li a:hover {
+  background-color: crimson;
+  border-radius: 3px;
+  transition: all 0.5s linear;
+}
+.footer-line {
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 50px;
+}
+.footer-last-row {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-last-row a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0 30px;
+  color: white;
+}
+.footer-last-row a:hover {
+  color: crimson;
+  border-radius: 3px;
+  transition: all 0.5s linear;
+}
+footer p {
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Roboto";
+  letter-spacing: 0.5px;
+}

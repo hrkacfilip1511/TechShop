@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1, "model": "DELL", "name": "DELL Inspiron 17", "inch": "17.3", "price": 1149, "picture": "./images/dell-inspiron.jpg",
+        "overview":"Procesor: i3-1005G1, RAM: 4GB, SSD: Bez, Operacijski sustav: Ubuntu, Grafička kartica: Intel"
+    },
+    {
+        "id": 2, "model": "DELL", "name": "DELL G7 17-7700", "inch": "17.3", "price": 3120, "picture": "./images/dell-g7-17.jpg", 
+        "overview":"Procesor: i5 10300H, RAM: 8GB DDR4, SSD: 512GB, Operacijski sustav: Windows 10 Home, Grafička kartica: NVIDIA GeForce GTX 1660"
+    },
+    {
+        "id": 3, "model": "DELL", "name": "Dell Vostro 3500", "inch": "15.6", "price": 2100, "picture": "./images/dell-vostro-3500.jpg", 
+        "overview":"Procesor: i7-1165G7, RAM: 8GB DDR4, SSD: 512GB, Operacijski sustav: Windows 10 Home, Grafička kartica: Intel Iris Xe"
+    },
+    {
+        "id": 4, "model": "HP", "name": "HP 255 G7", "inch": "15.6", "price": 970, "picture":"./images/hp.jpg", 
+        "overview": "Procesor: AMD Athlon Gold 3150U, RAM: 8GB DDR4, SSD: 256GB PCle NVMe, Operacijski sustav: Bez, Grafička kartica: AMD Radeon Graphics"
+    },
+    {
+        "id": 5, "model": "HP", "name": "HP 15S-FQ2031NM", "inch": "15.6", "price": 1050, "picture": "./images/hp-15s.jpg", 
+        "overview":"Procesor: i3-1115G4, RAM: 8GB DDR4, SSD: 512GB, Operacijski sustav: Windows 10 Home, Grafička kartica: Intel Graphics - UMA"
+    },
+    {
+        "id": 6, "model": "HP", "name": "HP ENVY X360", "inch": "15.6", "price": 2100, "picture": "./images/hp-envy.jpg", 
+        "overview":"Procesor: AMD Ryzen 7 4700u, RAM: 8GB DDR4, SSD: 512GB, Operacijski sustav: Windows 10 Home, Grafička kartica: NVIDIA GeForce GTX 1660"
+    },
+    {
+        "id": 7, "model": "HP", "name": "HP 250 G8, 27K00EA", "inch": "15.6", "price": 1200, "picture": "./images/hp-250-g8.jpg", 
+        "overview":"Procesor: i5-1035G1, RAM: 8GB DDR4, SSD: 256GB, Operacijski sustav: Windows 10 Home, Grafička kartica: Intel Graphics - UMA"
+    },
+    {
+        "id": 8, "model": "HP", "name": "HP Probook 455 G7", "inch": "15.6", "price": 1730, "picture": "./images/hp-probook-455.jpg", 
+        "overview":"Procesor: AMD Ryzen 5 4500u, RAM: 8GB DDR4, SSD: 512GB, Operacijski sustav: Windows 10 Pro, Grafička kartica: AMD Radeon"
+    },
+    {
+        "id": 9, "model": "HP", "name": "HP 470 G8", "inch": "17.3", "price": 2000, "picture": "./images/hp-470-g8.jpg", 
+        "overview":"Procesor: i5-1035G1, RAM: 8GB DDR4, SSD: 512GB, Operacijski sustav: Windows 10 Pro, Grafička kartica: Intel Graphics - UMA"
+    },
+    {
+        "id": 10, "model": "HP", "name": "HP Pavilion 15-DK1056NW *Gaming*", "inch": "15.6", "price": 2230, "picture": "./images/hp-pavilion-gaming.jpg", 
+        "overview":"Procesor: i5 10300H, 2.5GHz - 4.5GHz, RAM: 8GB DDR4, SSD: 512GB, Operacijski sustav: Windows 10 Home 64, Grafička kartica: NVIDIA GeForce GTX 2060 6GB"
+    },
+    {
+        "id": 11, "model": "HP", "name": "HP 250 G7 1L3L8EA", "inch": "15.6", "price": 1140, "picture": "./images/hp-250-g7.jpg", 
+        "overview":"Procesor: i3-1005G1, RAM: 8GB DDR4, SSD: 512GB, Operacijski sustav: Bez, Grafička kartica: NVIDIA MX110 2GB"
+    },
+    {
+        "id": 12, "model": "HP", "name": "HP 250 G8 2X7V6EA", "inch": "15.6", "price": 1050, "picture": "./images/hp-g8-250.jpg", 
+        "overview":"Procesor: i3-1005G1, RAM: 8GB DDR4, SSD: 512GB, Operacijski sustav: Bez, Grafička kartica: Intel"
+    },
+    {
+       "id": 13, "model": "Lenovo", "name": "Lenovo IDEAPAD 3", "inch": "14", "price": 1075, "picture": "./images/lenovo.jpg",
+       "overview": "Procesor: i3-1005G1, RAM: 8GB DDR4, SSD: 256GB, Operacijski sustav: Windows 10 Home, Grafička kartica: GeForce MX330 2GB"
+    },
+    {
+       "id": 14, "model": "Lenovo", "name": "Lenovo IDEAPAD 3", "inch": "17.3", "price": 1510, "picture": "./images/idepad.jpg",
+       "overview": "Procesor: i5-1135G7, RAM: 8GB DDR4, SSD: 256GB, Operacijski sustav: Bez, Grafička kartica: NVIDIA GeForce MX350 2GB GDDR6"
+    },
+     {
+         "id": 15, "model": "Lenovo", "name": "Lenovo V15 ALC 82KD0044SC", "inch": "15.6", "price": 1320, "picture": "./images/lenovo-v15.jpg", 
+         "overview":"Procesor: AMD Ryzen 7 5700u 8C, RAM: 8GB PC4-21300 DDR4, SSD: 512GB, Operacijski sustav: Linux, Grafička kartica: AMD Radeon Graphics Integrated"
+     },
+     {
+         "id": 16, "model": "Lenovo", "name": "Lenovo IDEAPAD Flex 5 14II", "inch": "14", "price": 1700, "picture": "./images/lenovo-flex-5.jpg", 
+         "overview":"Procesor: i3-1005G1, RAM: 8GB DDR4, SSD: 256GB, Operacijski sustav: Windows 10 Pro, Grafička kartica: Intel UHD Graphics"
+     },
+     {
+         "id": 17, "model": "Lenovo", "name": "Lenovo Yoga Slim 7", "inch": "14", "price": 1900, "picture": "./images/lenovo-yoga-slim.jpg", 
+         "overview":"Procesor: i5-1035G4, RAM: 16GB DDR4, SSD: 256GB, Operacijski sustav: Windows 10 Home, Grafička kartica: Intel Iris Plus Graphics"
+     },
+     {
+         "id": 18, "model": "Lenovo", "name": "Lenovo Thinkbook 15P", "inch": "15.6", "price": 2190, "picture": "./images/lenovo-thinkbook-15p.jpg", 
+         "overview":"Procesor: i5 10300H, RAM: 16GB DDR4, SSD: 512GB, Operacijski sustav: Linux, Grafička kartica: NVIDIA GeForce GTX 1650 Max-Q 4GB"
+     },
+     {
+         "id": 19, "model": "Macbook", "name": "MacBook Air 13 Retina", "inch": "13.3", "price": 2110, "picture": "./images/mac-13-retina.jpg", 
+         "overview":"Procesor: i5 10300H, 2.5GHz - 4.5GHz, RAM: 8GB LPDDR3, SSD: 256GB, Operacijski sustav: macOS, Grafička kartica: Intel UHD Graphics, Boja: Siva, Bijela, Zlatna"
+     },
+     {
+         "id": 20, "model": "Macbook", "name": "MacBook Pro 16 Touch Bar", "inch": "16", "price": 5500, "picture": "./images/mac-16-pro-touch-bar.jpg", 
+         "overview":"Procesor: i7 2.6GHz, RAM: 16GB, SSD: 512GB, Operacijski sustav: macOS, Grafička kartica: AMD Radeon Pro 5300M, Boja: Siva, Bijela, Roza"
+     }
+]
